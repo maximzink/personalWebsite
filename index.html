@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/globe.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <title>Maxim Zinchuk</title>
 </head>
+
+
 <body>
-    
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#abilities">Abilities</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#myProjects">My projects</a></li>
-                <li><a href="#contactMe">Contact me</a></li>
-            </ul>
-        </nav>
+    <div class="flex-container">
+        
+            <div style="flex-grow: 8">1</div>
+            <div style="flex-grow: 1"><a href="#profile">Profile</a></div>
+            <div style="flex-grow: 1"><a href="#experiences">Experiences</a></div>
+            <div style="flex-grow: 1"><a href="#my-prj">My projects</a></div>
+            <div style="flex-grow: 1"><a href="#contact">Contact me</a></div>
+        
+        </div>
+    <header class="parallax">
         <section>
-            <img src="img/sea.jpg" alt="seaFoto">
-            <h1>Maxim Zinchuk personal website</h1>
+                <h1>Maxim Zinchuk <br> <br> <br>personal website</h1>
         </section>
     </header>
     
     <main>
-        <section>
+        <section id="profile">
             <h2>Profile</h2>
             <h3>Beginner web developer</h3>
             <h4>About me</h4>
@@ -34,7 +35,11 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
             aliquip ex ea commodo consequat.</p>
-            <img src="img/maximFoto.jpg" alt="maximFoto"> 
+            <div class="maxim-foto">
+                <a target="_blank" href="img/maximFoto.jpg">
+                <img src="img/maximFoto.jpg" alt="maximFoto"> 
+                </a>
+            </div>
             <h4>Details</h4>
             <h6>Name</h6>
                 <p>Maxim Zinchuk</p>
@@ -43,7 +48,7 @@
             <h6>Location</h6>
                 <p>Lviv, Ukraine</p>
         </section>
-        <section>
+        <section class="experiences">
             <h3>Experiences</h3>
             <h4>Abilities</h4>
             <h5>Software skills</h5>
@@ -89,7 +94,7 @@
         <section>
             
         </section>
-        <section class="project">
+        <section id="my-prj">
             <h3>My projects</h3>
             <img  src="img/firstWebsite.jpg" alt="firstWebsite" height="250" width="250">
             <img  src="img/secondWebsite.png" alt="secondWebsite" height="250" width="250">
@@ -97,8 +102,8 @@
         </section>
     </main>
     
-    <footer>
-        <div id="contact">
+    <footer id="contact">
+        <div>
             <h3>Contact me</h3>
         	<form action="">
         	    <input type="text" placeholder="Name"><br>
@@ -110,7 +115,7 @@
         <section>
             <a href="https://www.facebook.com/maxim.zinchuk.1">Facebook</a>
             <a href="https://github.com/maximzink">Github</a>
-        </section>
+        </section >
         <span> 2018 ⒸСopyright Maxim Zinchuk </span>
     </footer>
     

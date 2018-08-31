@@ -1,47 +1,79 @@
-body{
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|PT+Sans|Raleway');
+
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.875em;
+    line-height: 1.6em;
+}
+
+header section h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+}
+
+
+header {
+    margin-top: 0px;
+}
+
+.parallax {
    
-}
-nav {
-	overflow: hidden;
-	float: right;
-}
-main {
-text-align: center;
+    background-image: url("../img/sea.jpg");
+    min-height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    align-items:center;
+    display: flex;
+    padding-left: 30%;
+    }
+
+
+div div  {
+     list-style-type: none;
+     border: 1px solid #555;
+     text-decoration: none;
+     position: sticky;
+     top: 0;
+     background-color: DodgerBlue;;
+     padding: 50px;
+     font-size: 20px;
+     
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #8d8741;
-    
-  
-}
 
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
+div div a {
     text-decoration: none;
 }
 
-li a.active {
-    background-color: #4CAF50;
-    color: white;
+.flex-container{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   position: sticky;
 }
 
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
 
-.project {
-    height: 250 px;
-    width: 250 px;
+
+.maxim-foto:hover {
+    border: 1px solid #777;
+    display: block;
     
 }
 
-footer {
-text-align: center;
+main section div img{
+    border-radius: 50%;
+    width: 350px;
+}
+
+.experiences{
+    background-color: #f5f5f0;
 }
