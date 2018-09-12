@@ -20,22 +20,25 @@ header section h1{
 
 
 header {
+     width: 100%;
     margin-top: 0px;
 }
 
 .parallax {
 
-    background-image: url("../img/sea.jpg");
+    background-image: url("../img/gory.jpg");
+    width: 100%;
     min-height: 700px;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     align-items:center;
     display: flex;
-    opacity: 0.8;
-    padding-left: 30%;
+    opacity: 0.9;
+    padding-left: 35%;
     text-align:center;
     
+       
 
     }
 
@@ -45,7 +48,7 @@ header {
      }
 
 
-div div  {
+.item1 {
      list-style-type: none;
      border: 1px solid #555;
      text-decoration: none;
@@ -57,8 +60,53 @@ div div  {
     white-space: nowrap;
 
 }
-div div:hover {
+.item1:hover {
     background-color: #2F4F4F;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #555;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.skype {
+  background: #55ACEE;
+  color: white;
+}
+
+.github {
+  background: #333;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.gmail{
+  background: #bb0000;
+  color: white;
 }
 
 
@@ -73,7 +121,7 @@ div div a {
 .wrapper{
     display: grid;
     position: fixed;
-    grid-template-columns: 320px 160px 160px  160px 160px ;
+    grid-template-columns: 240px 240px 240px  240px;
     text-align:center;
     z-index: 1;
 }
@@ -117,84 +165,54 @@ footer{
 main{
     text-align: center;
 }
-.item6{
+
+.container-fluid {
+    padding: 60px 50px;
+    
+}
+
+.profile{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 4rem;
+}
+h2{
+    font-size: 4rem;
+}
+
+footer:last-child{
+    font-size: 2rem;
+ 
+}
+
+.col-sm-5{
+   font-size: 1.7rem;
+    
+     
+    
+}
+
+#my-prj{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+}
+
+.parallax1 {
+
+    background-image: url("../img/more.jpg");
+    min-height:150px;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
+    align-items:center;
+    display: flex;
+    opacity: 1;
+    padding-left: 35%;
+    text-align:center;
+    color: white;
+     
+    
 }
 
-.form-style-6{
-    font: 95% Arial, Helvetica, sans-serif;
-    max-width: 400px;
-    margin: 10px auto;
-    padding: 16px;
-    background: #F7F7F7;
-}
-.form-style-6 h1{
-    background: #43D1AF;
-    padding: 20px 0;
-    font-size: 140%;
-    font-weight: 300;
-    text-align: center;
-    color: #fff;
-    margin: -16px -16px 16px -16px;
-}
-.form-style-6 input[type="text"],
-.form-style-6 input[type="date"],
-.form-style-6 input[type="datetime"],
-.form-style-6 input[type="email"],
-.form-style-6 input[type="number"],
-.form-style-6 input[type="search"],
-.form-style-6 input[type="time"],
-.form-style-6 input[type="url"],
-.form-style-6 textarea,
-.form-style-6 select 
-{
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    outline: none;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    background: #fff;
-    margin-bottom: 4%;
-    border: 1px solid #ccc;
-    padding: 3%;
-    color: #555;
-    font: 95% Arial, Helvetica, sans-serif;
-}
-.form-style-6 input[type="text"]:focus,
-.form-style-6 input[type="date"]:focus,
-.form-style-6 input[type="datetime"]:focus,
-.form-style-6 input[type="email"]:focus,
-.form-style-6 input[type="number"]:focus,
-.form-style-6 input[type="search"]:focus,
-.form-style-6 input[type="time"]:focus,
-.form-style-6 input[type="url"]:focus,
-.form-style-6 textarea:focus,
-.form-style-6 select:focus
-{
-    box-shadow: 0 0 5px #43D1AF;
-    padding: 3%;
-    border: 1px solid #43D1AF;
-}
 
-.form-style-6 input[type="submit"],
-.form-style-6 input[type="button"]{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    padding: 3%;
-    background: #43D1AF;
-    border-bottom: 2px solid #30C29E;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;    
-    color: #fff;
-}
-.form-style-6 input[type="submit"]:hover,
-.form-style-6 input[type="button"]:hover{
-    background: #2EBC99;
-}

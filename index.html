@@ -6,32 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/globe.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/index-layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    
     <title>Maxim Zinchuk</title>
 </head>
 
 
 <body>
     <div class="wrapper">
-
-        <div class="item1">1</div>
-        <div class="item2"><a href="#profile">Profile</a></div>
-        <div class="item3"><a href="#experiences">Experiences</a></div>
-        <div class="item4"><a href="#my-prj">My projects</a></div>
-        <div class="item5"><a href="#contact">Contact me</a></div>
-
+        <div class="item1"><a href="#profile">Profile</a></div>
+        <div class="item1"><a href="#experiences">Experiences</a></div>
+        <div class="item1"><a href="#my-prj">My projects</a></div>
+        <div class="item1"><a href="#contact">Contact me</a></div>
     </div>
     <header class="parallax">
         <section>
-            <h1>Maxim Zinchuk <br> <br> <br>personal website</h1>
+            <h1>Maxim Zinchuk
+                </br>personal website</h1>
         </section>
     </header>
-
+<div class="icon-bar">
+  <a href="https://www.facebook.com/maxim.zinchuk.1"  target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="skype"><i class="fa fa-skype"></i></a> 
+  <a href="https://github.com/maximzink?tab=repositories" target="_blank"  class="github"><i class="fa fa-github"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="gmail"><i class="fa fa-envelope"></i></a> 
+</div>
     <main id="profile">
+        <div class="profile">
+            <h2>Profile</h2>
+        </div>
+
         <section class="wrapper1">
             <div>
-                <h2>Profile</h2>
+
                 <h3>Beginner web developer</h3>
                 <p>About me</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -82,33 +93,66 @@
             </p>
         </section>
         <section>
-
+            target="_blank" href="img/maximFoto.jpg"
         </section>
         <h3 id="my-prj">My projects</h3>
         <section class="wrapper3">
-            <div><img class="item6" src="img/firstWebsite.jpg" alt="firstWebsite" height="200" width="300"></div>
+            <div><a target="_blank" href="img/firstWebsite.jpg"><img class="item6" src="img/firstWebsite.jpg" alt="firstWebsite" height="200" width="300"></a></div>
             <div><img class="item6" src="img/secondWebsite.png" alt="secondWebsite" height="200" width="300"></div>
             <div><img class="item6" src="img/thirdWebsite.jpg" alt="thirdWebsite" height="200" width="300"></div>
         </section>
     </main>
 
-   
 
-        <div class="form-style-6">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" name="field1" placeholder="Your Name" />
-                <input type="email" name="field2" placeholder="Email Address" />
-                <textarea name="field3" placeholder="Type your Message"></textarea>
-                <input type="submit" value="Send" />
-            </form>
+    <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">Contact me</h2>
+        </br>
+        </br>
+        </br>
+        <div class="row">
+            <div class="col-sm-5">
+                <p><b>Contacts</b></p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Lviv, Ukraine.</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +38 0633152386</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> maximzink@bigmir.net</p>
+            </div>
+            <div class="col-sm-7 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
         </div>
- <footer id="contact">
-        <section>
-            <a href="https://www.facebook.com/maxim.zinchuk.1">Facebook</a>
-            <a href="https://github.com/maximzink">Github</a>
-        </section>
-        <span> 2018 ⒸСopyright Maxim Zinchuk </span>
+    </div>
+    <div id="googleMap" style="height:400px;width:100%;"></div>
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(49.805712, 24.017424);
+            var mapProp = { center: myCenter, zoom: 12, scrollwheel: false, draggable: false, mapTypeId: google.maps.MapTypeId.ROADMAP };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({ position: myCenter });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApVS0dPje6v1XsfqNWCHnBGSs0mUp2VD8&callback=myMap"></script>
+    </br>
+    </br>
+
+    <footer class="parallax1">
+
+        <div>
+            <span clas="copyrigth"> 2018 ⒸСopyright Maxim Zinchuk </span>
+            <span class="glyphicon glyphicon-chevron-up"></span>
     </footer>
 
 </body>
