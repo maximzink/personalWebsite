@@ -8,7 +8,7 @@ body {
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
     font-size: 0.875em;
-    line-height: 1.6em;
+   
 }
 
 header section h1{
@@ -35,9 +35,8 @@ header {
     align-items:center;
     display: flex;
     opacity: 0.9;
-    padding-left: 35%;
-    text-align:center;
-    
+    align-items:center;
+    justify-content:center;
        
 
     }
@@ -50,25 +49,33 @@ header {
 
 .item1 {
      list-style-type: none;
-     border: 1px solid #555;
+     border: 1px solid #303030;
+     border-color: #303030;
      text-decoration: none;
      top: 0;
-     background-color: #708090;
-     padding: 16px;
-     font-size: 20px;
+     background-color: #606060;
+     padding: 10px;
+     font-size: 17px;
      overflow: auto;
-    white-space: nowrap;
+     white-space: nowrap;
+     color: white;
+     
 
 }
 .item1:hover {
-    background-color: #2F4F4F;
+    background-color: #00A591;
+    text-decoration: none;
+    
 }
 .icon-bar {
+  margin: -52px;
+  margin-top: 10px;
   position: fixed;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 100;
 }
 
 .icon-bar a {
@@ -110,27 +117,38 @@ header {
 }
 
 
-div div a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 0;
-    text-decoration: none;
-}
 
 .wrapper{
     display: grid;
     position: fixed;
-    grid-template-columns: 240px 240px 240px  240px;
+    grid-template-columns: 192px 192px 192px  192px 192px;
     text-align:center;
     z-index: 1;
+    
+    
 }
+
+ a:hover{
+  text-decoration: none;
+}
+.background-my-foto{
+    background-color: #deeaee;
+}
+.background-education{
+    background-color: #deeaee;
+}
+
 .wrapper1{
-   display: grid;
-    grid-template-columns: 300px 360px 300px ;
+   display: block;
+
+ 
 }
 .wrapper2{
    display: grid;
+   grid-template-columns: 440px 440px ;
+   align-content: center;
+   
+   
     
 }
 .wrapper3{
@@ -140,23 +158,22 @@ div div a {
 }
 
 
-.maxim-foto:hover {
-    border: 1px solid #777;
-    display: block;
-
-}
-
-main section div img{
-    
-}
-
 .experiences{
     background-color: #f5f5f0;
 }
+
+.maxim-foto{
+   
+    padding-bottom:60px;
+}
 .my-foto{
-    
+    border: 3px solid #303030;
     border-radius: 50%;
     width: 350px;
+}
+ .maxim-info{
+    margin-top: 80px;
+    margin-right: 140px;
 }
 
 footer{
@@ -172,9 +189,11 @@ main{
 }
 
 .profile{
-    margin-top: 50px;
+    padding-top: 30px;
     margin-bottom: 50px;
     font-size: 4rem;
+    text-decoration: underline;
+    text-decoration-color: #2F4F4F;
 }
 h2{
     font-size: 4rem;
@@ -200,19 +219,112 @@ footer:last-child{
 
 .parallax1 {
 
-    background-image: url("../img/more.jpg");
+    background-image: url("../img1/voda.jpg");
     min-height:150px;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     align-items:center;
+    justify-content:center;
     display: flex;
     opacity: 1;
-    padding-left: 35%;
-    text-align:center;
     color: white;
-     
+    font-size: 2rem;
+    margin-left: 0px;
+   
+}
+
+.jumbotron{
+    margin:0;
     
 }
 
+.container .jumbotron {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+ }
+ 
+  .glyphicon-chevron-up{
+      font-size: 25px;
+ }
 
+.fa-grav{
+    color: #606060;
+    font-size: 40px;
+}
+.fa-graduation-cap{
+    color: #606060;
+    font-size: 40px;
+}
+
+.fa-grav:hover {
+    color: #00A591;
+}
+.fa-graduation-cap:hover {
+    color: #00A591;
+}
+
+
+.logo1{
+    width: 70px;
+    height: 100%;
+}
+.logo2{
+    width: 100px;
+    height: 40px;
+}
+   
+   .logo3{
+    width: 100px;
+    height: 60%;
+}
+
+.item2{
+    font-size: 1.3rem;
+}
+
+ 
+.fa-star{
+   color: #555;
+}
+.fa-star:hover{
+   color:#00A591;
+}
+
+
+.checked{
+   color:#00A591 ;
+}
+.checked:hover{
+   color:  #2F4F4F;
+}
+   
+   @media screen and (max-width: 600px){
+   
+    .wrapper{
+    display: block;
+    position:relative;
+   ;
+    }
+    .wrapper1{
+    display: block;
+    position:relative;
+    
+    }
+    .wrapper2{
+    display: block;
+    position:relative;
+    
+    }
+    .wrapper3{
+    display: block;
+    position:relative;
+}
+}
+
+   
