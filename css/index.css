@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|Raleway');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|PT+Sans|Raleway');
 
-
 body {
     max-width: 960px;
     margin: 0 auto;
@@ -10,22 +9,17 @@ body {
     font-size: 0.875em;
    
 }
-
 header section h1{
     font-family: 'Dancing Script', cursive;
     font-size: 5rem;
     color: black;
 
 }
-
-
 header {
      width: 100%;
     margin-top: 0px;
 }
-
 .parallax {
-
     background-image: url("../img/gory.jpg");
     width: 100%;
     min-height: 700px;
@@ -35,18 +29,11 @@ header {
     align-items:center;
     display: flex;
     opacity: 0.9;
-    align-items:center;
     justify-content:center;
-       
-
-    }
-
-    .parallax:hover {
-
+}
+.parallax:hover {
         opacity: 1;
      }
-
-
 .item1 {
      list-style-type: none;
      border: 1px solid #303030;
@@ -58,14 +45,29 @@ header {
      font-size: 17px;
      overflow: auto;
      white-space: nowrap;
-     color: white;
-     
-
+     color: #00A591;
 }
 .item1:hover {
     background-color: #00A591;
     text-decoration: none;
+     color: white;
+}
+.text-paragraph{
     
+    font-size: 1.3rem;
+    padding-left: 80px;
+
+}
+#about-me{
+    color:#00A591;
+    font-size: 5rem;
+}
+.btn{
+    font-size: 20px;
+    border:  1px solid black;
+}
+.carousel-item{
+    height : 600px;
 }
 .icon-bar {
   margin: -52px;
@@ -77,7 +79,6 @@ header {
   transform: translateY(-50%);
   z-index: 100;
 }
-
 .icon-bar a {
   display: block;
   text-align: center;
@@ -90,12 +91,10 @@ header {
 .icon-bar a:hover {
     background-color: #555;
 }
-
 .facebook {
   background: #3B5998;
   color: white;
 }
-
 .skype {
   background: #55ACEE;
   color: white;
@@ -105,29 +104,21 @@ header {
   background: #333;
   color: white;
 }
-
 .linkedin {
   background: #007bb5;
   color: white;
 }
-
 .gmail{
   background: #bb0000;
   color: white;
 }
-
-
-
 .wrapper{
     display: grid;
     position: fixed;
     grid-template-columns: 192px 192px 192px  192px 192px;
     text-align:center;
     z-index: 1;
-    
-    
 }
-
  a:hover{
   text-decoration: none;
 }
@@ -140,24 +131,47 @@ header {
 
 .wrapper1{
    display: block;
-
- 
 }
 .wrapper2{
    display: grid;
-   grid-template-columns: 440px 440px ;
+   grid-template-columns:  240px 240px 240px 240px;
    align-content: center;
-   
-   
-    
 }
 .wrapper3{
    display: grid;
-     grid-template-columns: 320px 320px 320px ;
+    grid-template-columns: 320px 320px 320px ;
      
 }
+.wrapper5{
+   display: grid;
+   grid-template-columns: 240px 240px 240px 240px;
+}
 
-
+.skills{
+     font-size: 2.0rem;
+     text-align: left;
+     padding-left: 80px;
+     color: #00A591;
+}
+.skills1{
+     font-size: 2.0rem;
+     text-align: left;
+     padding-left: 80px;
+}
+.skills2{
+     font-size: 1.5rem;
+     text-align: left;
+     padding-left: 80px;
+}
+.item6{
+     height: 200px; 
+     width: 100%;
+}
+ .pull-right{
+    color:white;
+    background-color: #4169E1;
+    margin-top: 10px;
+}
 .experiences{
     background-color: #f5f5f0;
 }
@@ -175,7 +189,6 @@ header {
     margin-top: 80px;
     margin-right: 140px;
 }
-
 footer{
     text-align: center;
 }
@@ -185,15 +198,33 @@ main{
 
 .container-fluid {
     padding: 60px 50px;
-    
 }
-
 .profile{
     padding-top: 30px;
     margin-bottom: 50px;
     font-size: 4rem;
     text-decoration: underline;
     text-decoration-color: #2F4F4F;
+    color: #00A591;
+}
+.abilities{
+     font-size: 4rem;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     color: #00A591;
+}
+.abilities-quotes{
+    font-size: 1.7rem;
+     margin-bottom: 20px;
+}
+.text-center{
+    color: #00A591;
+}
+#my-prj{
+    color: #00A591;
+    font-size: 4rem;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 h2{
     font-size: 4rem;
@@ -206,20 +237,10 @@ footer:last-child{
 
 .col-sm-5{
    font-size: 1.7rem;
-    
-     
-    
-}
 
-#my-prj{
-    margin-bottom: 30px;
-    margin-top: 30px;
-    
 }
-
 .parallax1 {
-
-    background-image: url("../img1/voda.jpg");
+    background-image: url("../img/sea.jpg");
     min-height:150px;
     background-attachment: fixed;
     background-position: center;
@@ -233,12 +254,9 @@ footer:last-child{
     margin-left: 0px;
    
 }
-
 .jumbotron{
     margin:0;
-    
 }
-
 .container .jumbotron {
     padding-right: 0px;
     padding-left: 0px;
@@ -249,8 +267,13 @@ footer:last-child{
     padding-left: 0px;
  }
  
-  .glyphicon-chevron-up{
+.glyphicon-chevron-up{
       font-size: 25px;
+      
+ }
+ 
+.glyphicon-chevron-up:hover{
+      color: yellow;
  }
 
 .fa-grav{
@@ -268,8 +291,6 @@ footer:last-child{
 .fa-graduation-cap:hover {
     color: #00A591;
 }
-
-
 .logo1{
     width: 70px;
     height: 100%;
@@ -285,7 +306,11 @@ footer:last-child{
 }
 
 .item2{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+}
+.item5{
+    font-size: 1.4rem;
+    
 }
 
  
@@ -303,8 +328,12 @@ footer:last-child{
 .checked:hover{
    color:  #2F4F4F;
 }
+
+.row{
+    padding-left:0;
+}
    
-   @media screen and (max-width: 600px){
+@media screen and (max-width: 600px){
    
     .wrapper{
     display: block;
@@ -322,6 +351,10 @@ footer:last-child{
     
     }
     .wrapper3{
+    display: block;
+    position:relative;
+}
+.wrapper5{
     display: block;
     position:relative;
 }
